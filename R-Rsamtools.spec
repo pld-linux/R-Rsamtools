@@ -2,12 +2,12 @@
 
 Summary:	Binary alignment (BAM), variant call (BCF), or tabix file import
 Name:		R-%{packname}
-Version:	1.12.2
+Version:	1.12.4
 Release:	1
 License:	Artistic 2.0
 Group:		Applications/Math
-Source0:	http://www.bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-# Source0-md5:	4ff6113fe8b925cf7586e1331da1ec23
+Source0:	http://www.bioconductor.org/packages/2.12/bioc/src/contrib/%{packname}_%{version}.tar.gz
+# Source0-md5:	75189a4203fb3eb9bd8cda03f3e8c523
 Patch0:		bogus-deps.patch
 URL:		http://www.bioconductor.org/packages/2.12/bioc/html/Rsamtools.html
 BuildRequires:	R
