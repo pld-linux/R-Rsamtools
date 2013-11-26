@@ -3,7 +3,7 @@
 Summary:	Binary alignment (BAM), variant call (BCF), or tabix file import
 Name:		R-%{packname}
 Version:	1.14.2
-Release:	1
+Release:	2
 License:	Artistic 2.0
 Group:		Applications/Math
 Source0:	http://www.bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
@@ -14,11 +14,15 @@ BuildRequires:	R
 BuildRequires:	R-IRanges-devel >= 1.15.35
 BuildRequires:	R-GenomicRanges >= 1.11.38
 BuildRequires:	R-Biostrings-devel >= 2.25.6
+BuildRequires:	R-XVector-devel
+BuildRequires:	R-cran-bitops
 BuildRequires:	texlive-latex
 Requires:	R
 Requires:	R-IRanges >= 1.17.33
 Requires:	R-GenomicRanges >= 1.11.38
 Requires:	R-Biostrings >= 2.25.6
+Requires:	R-XVector
+Requires:	R-cran-bitops
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
