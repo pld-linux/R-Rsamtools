@@ -42,7 +42,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -c -n %{packname}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # circular dep on R-Rsamtools
