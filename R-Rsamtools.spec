@@ -3,7 +3,7 @@
 Summary:	Binary alignment (BAM), variant call (BCF), or tabix file import
 Name:		R-%{packname}
 Version:	1.14.2
-Release:	2
+Release:	3
 License:	Artistic 2.0
 Group:		Applications/Math
 Source0:	http://www.bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
