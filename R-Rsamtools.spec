@@ -3,12 +3,11 @@
 Summary:	Binary alignment (BAM), variant call (BCF), or tabix file import
 Name:		R-%{packname}
 Version:	2.26.0
-Release:	1
+Release:	2
 License:	Artistic 2.0
 Group:		Applications/Math
 Source0:	https://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
 # Source0-md5:	49e2932a8f1cb9515ef3cd8a79754c11
-Patch0:		bogus-deps.patch
 URL:		https://bioconductor.org/packages/release/bioc/html/Rsamtools.html
 BuildRequires:	R
 BuildRequires:	R-IRanges-devel >= 1.15.35
@@ -42,7 +41,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -c -n %{packname}
-%patch -P0 -p1
 
 %build
 # circular dep on R-Rsamtools
